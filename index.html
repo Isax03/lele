@@ -12,7 +12,7 @@
             }
             .col{
                 display: grid;
-                row-gap: 30px;
+                row-gap: 20px;
                 justify-content: center;
                 align-items: center;
             }
@@ -20,11 +20,18 @@
                 height: 70%;
             }
             #centro{
-                transform: translateY(75%);
-                width: 125%;
-                height: 125%;
+				display: flex;
+                transform: translateY(475px);
+                width: 100%;
+                height: 100px;
                 justify-self: center;
             }
+			.tmp{
+				padding: 10px;
+				float: left;
+				width: 50%;
+				height: 50%;
+			}
             img{
                 display: block;
                 width: 400px;
@@ -35,8 +42,19 @@
                 justify-content: center;
             }
             .button{
-                background: red;
+                background: #fbf0d0;
+				padding: 10px 20px;
+				text-decoration: none;
+				color: black;
+				box-shadow: #ccc 3px 3px;
+				border-radius: 6px;
             }
+			.button:active{
+				position: relative;
+				top: 3px;
+				left: 3px;
+				box-shadow: none;
+			}
         </style>
     </head>
     <body>
@@ -56,11 +74,11 @@
                     </a>
                 </div>
             </div>
-            <div id="centro" class="col" style="background-color: red;">
-                <a class="button" href="">Bottone</a>
-                <a class="button" href="">Bottone</a>
-                <a class="button" href="">Bottone</a>
-                <a class="button" href="">Bottone</a>
+            <div id="centro" class="col"">
+                <div class="tmp"><a class="button" href="">Bottone</a></div>
+                <div class="tmp"><a class="button" href="">Bottone</a></div>
+                <div class="tmp"><a class="button" href="">Bottone</a></div>
+                <div class="tmp"><a class="button" href="">Bottone</a></div>
             </div>
             <div id="destra" class="col">
                 <div id="ita1" class="img">
